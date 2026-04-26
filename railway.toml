@@ -1,1 +1,6 @@
+[build]
+builder = "NIXPACKS"
+
+[deploy]
 startCommand = "gunicorn bot:app & python3 bot.py"
+restartPolicyType = "ON_FAILURE"
